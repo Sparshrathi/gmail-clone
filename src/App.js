@@ -2,13 +2,29 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
+import {  BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
+import Mail from './Components/Mail';
+import EmailList from './Components/EmailList';
 
 function App() {
   return (
-    <div className="App">
-    <Header />
-    <Sidebar/>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+          <div className="app_body">
+            <Sidebar/>
+            
+            <Switch>
+              <Route path="/mail">
+                <Mail/>
+              </Route>
+              <Route path="/">
+                <EmailList/>
+              </Route>
+            </Switch>
+          </div>
+      </div>
+    </Router>
   );
 }
 

@@ -13,12 +13,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import PersonIcon from '@mui/icons-material/Person';
 import DuoIcon from '@mui/icons-material/Duo';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+
 function Sidebar() {
     return (
         <div className="sidebar">
             <Button className="sidebar_compose" 
-                startIcon={<AddIcon fontSize="large"/>} 
-            >
+                startIcon={<AddIcon fontSize="large"/>}>
                 Compose
             </Button>
 
