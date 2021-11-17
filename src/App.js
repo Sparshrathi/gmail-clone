@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Sidebar from './Components/Sidebar';
+import SendMail from './Components/SendMail';
 import {  BrowserRouter as Router,  Switch,  Route,  Link} from "react-router-dom";
 import Mail from './Components/Mail';
 import EmailList from './Components/EmailList';
@@ -23,6 +24,9 @@ function App() {
               </Route>
             </Switch>
           </div>
+        
+          <SendMail/>
+
       </div>
     </Router>
   );
